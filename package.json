@@ -2,10 +2,10 @@
   "name": "week01",
   "version": "1.0.0",
   "description": "week 01. rendering to web",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "Anna Taylor",
-    "start": "nodemon server.js"
+    "start": "nodemon app.js"
   },
   "keywords": [
     "week01"
@@ -13,7 +13,9 @@
   "author": "Anna Taylor",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
