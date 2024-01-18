@@ -1,3 +1,0 @@
-you want your server file to be very simple. This is like the main file.
-
-app.get is just an function to a port. like flask.
