@@ -1,0 +1,11 @@
+//local host rest request
+GET http://localhost:8080/contacts
+##
+GET http://localhost:8080/contacts/65aab3b1899d835025c77f1f
+##
+GET http://localhost:8080/contacts/65aab3b7899d835025c77f20
+##
+GET http://localhost:8080/contacts/65aab3bd899d835025c77f21
+##
+
+// render web sites

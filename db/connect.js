@@ -13,7 +13,7 @@ const initDb = (callback) => {
     return callback(null, _db);
   }
   //finding the variable in .env
-  MongoClient.connect(process.env.MONGODB)
+  MongoClient.connect(process.env.MONGODB_URL)
     .then((client) => {
       _db = client;
       callback(null, _db);
