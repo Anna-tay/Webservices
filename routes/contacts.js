@@ -7,6 +7,14 @@ const contactCon = require('../controller/contacts');
 router.get('/', contactCon.getAll);
 
 router.get('/:id', contactCon.getOne);
-// localhost:8080/professional/
+
+//create statement
+router.post('/', contactCon.newContact);
+
+// put route
+router.put('/:id', contactCon.modifyId);
+
+//Delete
+router.delete('/:id', contactCon.deleteId);
 
 module.exports = router;

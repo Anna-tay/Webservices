@@ -1,11 +1,18 @@
-//local host rest request
+// LOCALHOST
+### Get all contacts
 GET http://localhost:8080/contacts
-##
-GET http://localhost:8080/contacts/65aab3b1899d835025c77f1f
-##
-GET http://localhost:8080/contacts/65aab3b7899d835025c77f20
-##
-GET http://localhost:8080/contacts/65aab3bd899d835025c77f21
-##
 
-// render web sites
+### Get contact by id
+GET http://localhost:8080/contacts/65aab3b7899d835025c77f20
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+
+### PUT contact
+PUT http://localhost:8080/contacts/65b297709aae3e2b848cda7d HTTP/1.1 content-type: application/json
+
+
+### DELETE contact
+DELETE http://localhost:8080/contacts/65b297709aae3e2b848cda7d
+
+// render requests
