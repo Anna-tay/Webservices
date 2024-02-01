@@ -4,7 +4,6 @@ const router = express.Router();
 
 //routes
 router.use('/contacts', require('./contacts'));
+router.use('/', require('./swagger'));
 
-
-// exporting them
 module.exports = router;
