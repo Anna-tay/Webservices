@@ -27,20 +27,20 @@ const getOne= async (req, res) => {
 
 //create route
 const newContact = async (req, res) => {
-  // contact ={
-  //   firstname: req.body.firstName,
-  //   lastname: req.body.lastName,
-  //   email: req.body.email,
-  //   favoriteColor: req.body.favoriteColor,
-  //   birthday: req.body.birthday
-  // }
   contact ={
-    firstname: "JJ",
-    lastname: "wat",
-    email: "jjwat123@gmail.com",
-    favoriteColor: "Gray",
-    birthday: "04/19/1981"
+    firstname: req.body.firstName,
+    lastname: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
   }
+  // contact ={
+  //   firstname: "JJ",
+  //   lastname: "wat",
+  //   email: "jjwat123@gmail.com",
+  //   favoriteColor: "Gray",
+  //   birthday: "04/19/1981"
+  // }
   const response = await mongodb
     .getDb()
     .db()
@@ -57,20 +57,20 @@ const newContact = async (req, res) => {
 // put route. update
 const modifyId = async (req, res) => {
   const userId = new ObjectId(req.params.id);
-  // updateContact ={
-  //   firstname: req.body.firstName,
-  //   lastname: req.body.lastName,
-  //   email: req.body.email,
-  //   favoriteColor: req.body.favoriteColor,
-  //   birthday: req.body.birthday
-  // }
   updateContact ={
-    firstname: "JJ",
-    lastname: "Tooler",
-    email: "jjtooler123@gmail.com",
-    favoriteColor: "Gray",
-    birthday: "04/19/1981"
+    firstname: req.body.firstName,
+    lastname: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
   }
+  // updateContact ={
+  //   firstname: "JJ",
+  //   lastname: "Tooler",
+  //   email: "jjtooler123@gmail.com",
+  //   favoriteColor: "Gray",
+  //   birthday: "04/19/1981"
+  // }
   const response = await mongodb
     .getDb()
     .db()
